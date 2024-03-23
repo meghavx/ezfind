@@ -1,0 +1,5 @@
+this is a RANDOM FILE that is used as a demo
+for the EZFILE application. This can be considered
+as a stripped-down version of grep, the well-known
+linux utility that can find patterns in files
+and also do MUCH MORE. It has a nice command line
