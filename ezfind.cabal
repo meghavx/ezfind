@@ -60,8 +60,10 @@ library
 
     -- Modules exported by the library.
     exposed-modules:  
-        MyLib, 
-        MyLib2
+        MyLib,
+        Types,
+        Parsers,
+        MyLibIO
 
     -- Modules included in this library but not exported.
     -- other-modules:
@@ -72,6 +74,7 @@ library
     -- Other library packages from which modules are imported.
     build-depends:    
         base ^>=4.17.2.1,
+        optparse-applicative,
         ansi-terminal
 
     -- Directories containing source files.
@@ -96,6 +99,7 @@ executable ezfind
     -- Other library packages from which modules are imported.
     build-depends:
         base ^>=4.17.2.1,
+        optparse-applicative,
         ezfind
 
     -- Directories containing source files.

@@ -30,6 +30,16 @@
   (major1) == 4 && (major2) <  17 || \
   (major1) == 4 && (major2) == 17 && (minor) <= 2)
 #endif /* MIN_VERSION_base */
+/* package optparse-applicative-0.18.1.0 */
+#ifndef VERSION_optparse_applicative
+#define VERSION_optparse_applicative "0.18.1.0"
+#endif /* VERSION_optparse_applicative */
+#ifndef MIN_VERSION_optparse_applicative
+#define MIN_VERSION_optparse_applicative(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  18 || \
+  (major1) == 0 && (major2) == 18 && (minor) <= 1)
+#endif /* MIN_VERSION_optparse_applicative */
 
 /* tool gcc-11 */
 #ifndef TOOL_VERSION_gcc
