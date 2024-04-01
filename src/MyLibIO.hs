@@ -1,3 +1,5 @@
+{-# LANGUAGE RecordWildCards #-}
+
 module MyLibIO (
   fetchArgs,
   fetchSearchResult
@@ -15,10 +17,10 @@ fetchArgs :: IO Args
 fetchArgs = Options.execParser progParser
 
 fetchSearchResult :: Args -> IO ()
-fetchSearchResult (Args ci lf hf filePath term) = do
+fetchSearchResult Args {..} = do
   lines' <- getLines filePath
-  let searchResult = search ci term lines'
-  printLines searchResult lf hf
+  let searchResult = search caseInsensitiveFlag term lines'
+  printLines searchResult lineNumberFlag highlightFlag
 
 getLines :: FilePath -> IO [Line]
 getLines filePath = do

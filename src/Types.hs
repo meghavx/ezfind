@@ -10,7 +10,7 @@ data Args = Args
   { caseInsensitiveFlag :: Bool
   , lineNumberFlag :: Bool
   , highlightFlag :: Bool
-  , file :: FilePath
+  , filePath :: FilePath
   , term :: String
 } deriving Show
 
